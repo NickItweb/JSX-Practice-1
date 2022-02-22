@@ -2,12 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 const name = "Angela";
-const num = 7;
+const currentDate = new Date();
+const year = currentDate.getFullYear();
 
 ReactDOM.render(
   <div>
-    <h1>My Favourite {name}!</h1>
-    <p>Your luck Number is {Math.floor(Math.random() * 10)}</p>
+    <h1>Created by {name}!</h1>
+    <p>Copyright {year}</p>
   </div>,
   document.getElementById("root")
 );
